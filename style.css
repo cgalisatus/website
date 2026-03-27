@@ -150,7 +150,6 @@ main {
 .nav {
     display: flex;
     margin-bottom: 2rem;
-    display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
@@ -335,6 +334,11 @@ img {
 
 form {
   margin-bottom: 1rem;
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 input {
