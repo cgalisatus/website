@@ -44,7 +44,7 @@ main {
     font-size: 1rem;
     opacity: 0.6;
     margin-bottom: 3rem;
-    max-width: 600px;
+    max-width: 650px;
     text-align: center;
     line-height: 1.5;
     padding: 0 1 rem;
@@ -177,7 +177,7 @@ img {
     height: auto;
     max-width: 90%;
     flex-shrink: 0;
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 
 /* Gallery container */
@@ -343,4 +343,9 @@ font-family: inherit;
   margin-left: 8px;
   background-color: #fcd5ac;
   padding: 10px 10px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
