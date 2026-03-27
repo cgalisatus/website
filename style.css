@@ -320,3 +320,27 @@ img {
 .past-shows .show {
     opacity: 0.4;
 }
+
+form {
+  margin-bottom: 1rem;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #9a5b19;
+  background: transparent;
+  padding: 10px;
+  font-family: inherit;
+}
+
+button {
+font-family: inherit;
+  border-width: small;
+  border-color: #9a5b19;
+  border-radius: 5px;
+  color: #9a5b19;
+  cursor: pointer;
+  margin-left: 8px;
+  background-color: #fcd5ac;
+  padding: 10px 10px;
+}
