@@ -1,22 +1,26 @@
-/* Reset */
+/* ------------------------------
+big picture styling thingz
+-------------------------------*/
+
+/* reset browser styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base */
+/* base */
 body {
     font-family: Georgia, "Times New Roman", serif;
     background: #f9ede6;
     color: #000000;
-    height: 100vh;
+    height: 100vh; /*viewport height*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* Layout */
+/* layout */
 main {
     display: flex;
     flex-direction: column;
@@ -24,7 +28,7 @@ main {
     padding: 5px;
 }
 
-/* Typography */
+/* default font + styling */
 .title {
     font-size: 2rem;
     font-weight: normal;
@@ -32,15 +36,20 @@ main {
     margin-bottom: 1rem;
     margin-top: 6rem;
 }
+/* ------------------------------
+title
+-------------------------------*/
 
+/* title link formatting */
 .title a {
     color: inherit;
-    /* keeps text color */
     text-decoration: none;
-    /* removes underline */
 }
 
-.tagline {
+/* ------------------------------
+body text
+-------------------------------*/
+.bodytext {
     font-size: 1rem;
     opacity: 0.6;
     margin-bottom: 3rem;
@@ -50,88 +59,26 @@ main {
     padding: 0 1 rem;
 }
 
-
-.tagline a {
+/* bodytext link formatting */
+.bodytext a {
     color: rgb(66, 27, 0);
     text-decoration: none;
-    /* remove underline */
-    border-bottom: 1px solid #9a5b19;
-    /* subtle underline */
+    border-bottom: 1px solid #9a5b19; /* underline */
     background-image: linear-gradient(#9a5b19, #9a5b19);
     background-size: 0% 1px;
     background-position: 0 100%;
     background-repeat: no-repeat;
     transition: background-size 0.3s ease;
-
 }
 
-.tagline a:hover {
+/* animated underline on hover */
+.bodytext a:hover {
     background-size: 100% 1px;
 }
 
-/* The box containing image + text */
-.record-block {
-    display: flex;
-    flex-direction: row;
-    /* stack image and text horizontally */
-    align-items: flex-start;
-    /* centers the box itself inside main */
-    max-width: 800px;
-    /* controls width of the box */
-    margin-bottom: 2rem;
-    /* space between blocks */
-}
-
-/* Make the image fit nicely */
-.record-block img {
-    max-width: 45%;
-    height: fit-content;
-    margin-bottom: 0.5rem;
-    /* space between image and paragraph */
-    margin-right: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    border-radius: 6px;
-}
-
-/* Paragraph text inside the block */
-.record-block .paragraphtext {
-    width: 100%;
-    /* fill the container width */
-    text-align: left;
-    /* left-align text inside the box */
-    opacity: 0.6;
-}
-
-
-.audio {
-    width: 100%;
-    margin-bottom: 0.5rem;
-    width: 100%;
-    text-align: center;
-}
-
-.paragraphtext {
-    font-size: .85rem;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
-    max-width: 650px;
-    width: 100%;
-    text-align: left;
-}
-
-.photocredit {
-    font-size: 0.6rem;
-    opacity: 0.6;
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-    max-width: 400px;
-}
-
-.photocredit a {
-    color: #9a5b19;
-    text-decoration: none;
-}
+/* ------------------------------
+section headers
+-------------------------------*/
 
 .sectionheader {
     font-size: 1rem;
@@ -143,14 +90,15 @@ main {
     text-align: center;
 }
 
+/* section headers as links */
 .sectionheader a {
     color: inherit;
-    /* keeps text color */
     text-decoration: none;
-    /* removes underline */
 }
 
-/* Navigation */
+/* ------------------------------
+navigation & footer
+-------------------------------*/
 .nav {
     display: flex;
     margin-bottom: 2rem;
@@ -175,7 +123,6 @@ main {
     opacity: 1;
 }
 
-/* Footer */
 footer {
     position: fixed;
     text-align: center;
@@ -186,6 +133,10 @@ footer {
     padding: 20px;
 }
 
+/* ------------------------------
+photos + photo credits
+-------------------------------*/
+
 img {
     max-height: 60vh;
     width: auto;
@@ -195,7 +146,63 @@ img {
     margin-top: 0rem;
 }
 
-/* Gallery container */
+.photocredit {
+    font-size: 0.6rem;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+
+.photocredit a {
+    color: #9a5b19;
+    text-decoration: none;
+}
+
+/* ------------------------------
+records page styling
+-------------------------------*/
+
+/* image + text box */
+.record-block {
+    display: flex;
+    flex-direction: row;   /* stack image and text horizontally */
+    align-items: flex-start;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.record-block img {
+    max-width: 45%;
+    height: fit-content;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+
+/* paragraph text inside the block */
+.record-block .paragraphtext {
+    width: 100%;
+    text-align: left;
+    opacity: 0.6;
+}
+
+.paragraphtext {
+    font-size: .85rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    max-width: 650px;
+    width: 100%;
+    text-align: left;
+}
+
+/* ------------------------------
+video & audio blocks
+-------------------------------*/
+
+/* gallery container */
 .video-gallery,
 .audio-gallery {
     max-width: 800px;
@@ -208,7 +215,7 @@ img {
     margin: 1rem;
 }
 
-/* Each video + description block */
+/* each video + description block */
 .video-block {
     display: flex;
     flex-direction: column;
@@ -217,7 +224,7 @@ img {
     /* controls width of each block */
 }
 
-/* Responsive iframe */
+/* responsive iframe */
 .video-block iframe {
     width: 500px;
     height: auto;
@@ -225,11 +232,10 @@ img {
     /* maintains video ratio */
 }
 
-/* Paragraph text below each video */
+/* paragraph text below each video */
 .video-block .paragraphtext {
     width: 100%;
     text-align: left;
-    /* left-aligned text inside centered block */
     margin-top: 0.2rem;
 }
 
@@ -270,59 +276,9 @@ img {
 }
 
 
-
-
-/* Optional: smaller text on very small screens */
-@media (max-width: 480px) {
-    .paragraphtext {
-        font-size: 0.8rem;
-    }
-
-    .sectionheader {
-        font-size: 0.8rem;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-
-    .nav {
-        gap: 1rem;
-    }
-
-    img {
-        max-width: 95%
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    .tagline {
-        font-size: 0.95rem;
-    }
-
-    .video-block iframe,
-    audio {
-        width: 100%;
-        height: auto;
-    }
-
-    .content-block,
-    .video-block {
-        max-width: 95%;
-    }
-
-    .record-block {
-        flex-direction: column;
-        align-items: left;
-    }
-
-    .record-text {
-        text-align: center;
-        width: 100%;
-    }
-}
+/* ------------------------------
+upcoming/past shows
+-------------------------------*/
 
 .upcoming,
 .past-shows {
@@ -336,6 +292,10 @@ img {
     opacity: 0.4;
 }
 
+
+/* ------------------------------
+email list submission form
+-------------------------------*/
 form {
   margin-bottom: 1rem;
     display: flex;
@@ -368,4 +328,60 @@ font-family: inherit;
 
 button:hover {
   transform: scale(1.1);
+}
+
+/* ------------------------------
+mobile responsive
+-------------------------------*/
+
+/* smaller text on  small screens */
+@media (max-width: 480px) {
+    .paragraphtext {
+        font-size: 0.8rem;
+    }
+
+    .sectionheader {
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .nav {
+        gap: 1rem;
+    }
+
+    img {
+        max-width: 95%
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .bodytext {
+        font-size: 0.95rem;
+    }
+
+    .video-block iframe,
+    audio {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-block,
+    .video-block {
+        max-width: 95%;
+    }
+
+    .record-block {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .record-text {
+        text-align: center;
+        width: 100%;
+    }
 }

@@ -1,3 +1,6 @@
+/* 
+sorting upcoming and past shows
+*/
 const showsData = [
     { date: "2026-02-18", text: "February 18 - Los Angeles, CA - Minaret Records Piano Party" },
     { date: "2026-06-03", text: "June 3 - Brooklyn, NY - Three's Brewing" },
@@ -14,8 +17,7 @@ today.setHours(0, 0, 0, 0);
 
 showsData.forEach(show => {
     const [year, month, day] = show.date.split('-');
-    const showDate = new Date(year, month - 1, day);
-
+    const showDate = new Date(year, month - 1, day); //include shows that are today
     const div = document.createElement('div');
     div.classList.add('show');
     div.innerHTML = `<p>${show.text}</p>`;
