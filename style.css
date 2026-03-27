@@ -89,6 +89,9 @@ main {
     margin-bottom: 0.5rem;
     /* space between image and paragraph */
     margin-right: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
 }
 
 /* Paragraph text inside the block */
@@ -97,6 +100,7 @@ main {
     /* fill the container width */
     text-align: left;
     /* left-align text inside the box */
+    opacity: 0.6;
 }
 
 
@@ -132,6 +136,14 @@ main {
     max-width: 650px;
     width: 100%;
     text-align: center;
+    color: inherit;
+}
+
+.sectionheader a {
+    color: inherit;
+    /* keeps text color */
+    text-decoration: none;
+    /* removes underline */
 }
 
 /* Navigation */
