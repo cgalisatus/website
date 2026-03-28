@@ -52,7 +52,7 @@ body text
 .bodytext {
     font-size: 1rem;
     opacity: 0.6;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     max-width: 650px;
     text-align: center;
     line-height: 1.5;
@@ -134,11 +134,24 @@ footer {
 }
 
 /* ------------------------------
+graphics
+-------------------------------*/
+.divider {
+    fill:#9a5b19;
+    fill-opacity:0.3;
+    stroke:#9a5b19;
+    stroke-width:0.1;
+    stroke-opacity:0.2;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------
 photos + photo credits
 -------------------------------*/
 
 img {
-    max-height: 60vh;
+    max-height: 50vh;
     width: auto;
     height: auto;
     max-width: 90%;
@@ -149,8 +162,8 @@ img {
     font-size: 0.6rem;
     opacity: 0.6;
     margin-top: 0.5rem;
-    margin-bottom: 2rem;
     max-width: 400px;
+    margin-bottom: 0.5rem;
 }
 
 .photocredit a {
@@ -379,4 +392,6 @@ mobile responsive
         text-align: center;
         width: 100%;
     }
+
+
 }
