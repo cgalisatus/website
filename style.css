@@ -142,8 +142,6 @@ graphics
     stroke:#9a5b19;
     stroke-width:0.1;
     stroke-opacity:0.2;
-    display:flex;
-    flex-wrap: wrap;
 }
 
 /* ------------------------------
