@@ -143,7 +143,6 @@ img {
     height: auto;
     max-width: 90%;
     flex-shrink: 0;
-    margin-top: 0rem;
 }
 
 .photocredit {
@@ -208,10 +207,8 @@ video & audio blocks
     max-width: 800px;
     display: flex;
     flex-wrap: wrap;
-    /* wrap videos to next row on smaller screens */
     gap: 1rem;
     justify-content: center;
-    /* centers the grid */
     margin: 1rem;
 }
 
@@ -221,15 +218,13 @@ video & audio blocks
     flex-direction: column;
     align-items: center;
     max-width: 800px;
-    /* controls width of each block */
 }
 
 /* responsive iframe */
 .video-block iframe {
     width: 500px;
     height: auto;
-    aspect-ratio: 16 / 9;
-    /* maintains video ratio */
+    aspect-ratio: 16 / 9; /* maintains video ratio */
 }
 
 /* paragraph text below each video */
