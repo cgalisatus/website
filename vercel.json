@@ -11,9 +11,9 @@
       "permanent": true
     },
     {
-      "source": "/:path*",
+      "source": "/contact",
       "destination": "/index.html",
-      "permanent": false
+      "permanent": true
     }
   ]
 }
