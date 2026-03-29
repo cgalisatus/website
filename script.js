@@ -5,7 +5,7 @@ const showsData = [
     { date: "2026-02-18", text: "February 18 - Los Angeles, CA - Minaret Records Piano Party" },
     { date: "2026-06-03", text: "June 3 - Brooklyn, NY - Three's Brewing" },
     { date: "2026-06-04", text: "June 4 - Brooklyn, NY - Mudhouse" },
-    { date: "2026-06-06", text: "June 6 - Manhattan, NY - Close Up" },
+    { date: "2026-06-06", text: "June 6 - Manhattan, NY - Close Up"},
     { date: "2026-07-13", text: "July 13 - Stanford, CA - Stanford Jazz Festival", link: "https://stanfordjazz.org/event/christina-galisatus-quintet-plays-joni-mitchell/" }
 ];
 
