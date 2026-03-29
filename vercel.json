@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/music",
+      "destination": "/records.html",
+      "permanent": true
+    },
+    {
+      "source": "/shows",
+      "destination": "/upcomingshows.html",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "/index.html",
+      "permanent": false
+    }
+  ]
+}
