@@ -150,6 +150,7 @@ section headers
 /* ------------------------------
 navigation & footer
 -------------------------------*/
+
 .nav {
     display: flex;
     margin-bottom: 2rem;
