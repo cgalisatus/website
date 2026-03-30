@@ -262,7 +262,7 @@ records page styling
 
 .record-block img {
     display: block;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     height: auto;
     border: 1px solid rgba(0, 0, 0, 0.08);
@@ -278,7 +278,7 @@ records page styling
     left: 50%;
     transform: translate(-50%, -50%); 
     width: 650px;
-    max-width: 70%;
+    max-width: 85%;
     text-align: center;
     font-size: 0.8rem;
     opacity: 0;
@@ -288,7 +288,7 @@ records page styling
 
 .record-block:hover img {
     transform: scale(1.03); 
-    opacity: 0.15;
+    opacity: 0.1;
     transition: opacity 0.3s ease;
 }
 
@@ -492,14 +492,6 @@ mobile responsive
         max-width: 95%;
     }
 
-    .record-text {
-        text-align: center;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
-
     .record-block img {
         display: flex;
         width: 100%;
@@ -514,7 +506,7 @@ mobile responsive
         position: static;
         transform: none;
         opacity: 1;
-        color: #281f16bd;   
+        color: #000000;   
         margin-top: 1rem;
         width: 100%;
         max-width: 400px;
