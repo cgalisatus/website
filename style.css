@@ -254,37 +254,48 @@ records page styling
 
 /* image + text box */
 .record-block {
-    display: flex;
-    flex-direction: row;   /* stack image and text horizontally */
-    align-items: flex-start;
+    display: inline-block;
+    position: relative;
     max-width: 800px;
     margin-bottom: 2rem;
 }
 
 .record-block img {
-    max-width: 45%;
-    height: fit-content;
-    margin-bottom: 0.5rem;
-    margin-right: 1rem;
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+    height: auto;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     border-radius: 6px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* paragraph text inside the block */
 .record-block .paragraphtext {
-    width: 100%;
-    text-align: left;
-    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 650px;
+    max-width: 70%;
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #000000bf;
 }
 
-.paragraphtext {
-    font-size: .85rem;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
-    max-width: 650px;
-    width: 100%;
-    text-align: left;
+.record-block:hover img {
+    transform: scale(1.03); 
+    opacity: 0.15;
+    transition: opacity 0.3s ease;
+}
+
+.record-block:hover .paragraphtext {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
 }
 
 /* ------------------------------
@@ -481,13 +492,37 @@ mobile responsive
         max-width: 95%;
     }
 
-    .record-block {
-        flex-direction: column;
-        align-items: left;
-    }
-
     .record-text {
         text-align: center;
         width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
     }
+
+    .record-block img {
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .record-block .paragraphtext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: static;
+        transform: none;
+        opacity: 1;
+        color: #281f16bd;   
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .record-block:hover img {
+        transform: none;
+        opacity: 1;                 
+  }
+
 }
