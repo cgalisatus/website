@@ -27,10 +27,57 @@ main {
     align-items: center;
     padding: 5px;
     padding-bottom: 50px;
+    opacity: 0;
+    transition: opacity 0.8s ease;
 }
 
+/* resize jitter fix */
 body.resizing * {
   transition: none !important;
+}
+
+/* ------------------------------
+loading
+-------------------------------*/
+
+main.loaded {
+  opacity: 1;
+}
+
+/* center the loader on screen */
+#loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 8px;
+  z-index: 9999;
+  font-size: 20px; 
+  color: #9a5b19;
+}
+
+/* flower animation */
+.loader-flower {
+  display: inline-block;
+  animation: bounce-spin 0.8s infinite alternate;
+  opacity: 0.6;
+}
+
+/* stagger for each flower */
+.loader-flower:nth-child(2) { animation-delay: 0.2s; }
+.loader-flower:nth-child(3) { animation-delay: 0.4s; }
+
+/* combine bounce + spin */
+@keyframes bounce-spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-8px) rotate(360deg);
+    opacity: 1;
+  }
 }
 
 /* ------------------------------

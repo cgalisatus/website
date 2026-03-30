@@ -30,6 +30,12 @@
 
 <body>
 
+  <div id="loader">
+    <span class="loader-flower"> ✿</span>
+    <span class="loader-flower"> ✿</span>
+    <span class="loader-flower">✿ </span>
+  </div>
+
   <main>
     
     <h1 class="title a">
@@ -112,6 +118,25 @@
       thanks.style.display = "block";
     });
   </script>
+
+<!--logic for loading fade-in-->
+    <script> 
+    window.addEventListener("load", () => {
+    document.querySelector("main").classList.add("loaded");
+    });
+    </script>
+
+<!--logic for dot loading fade-out-->
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    if (loader) {
+      loader.style.transition = "opacity 0.5s ease";
+      loader.style.opacity = 0;
+      setTimeout(() => loader.remove(), 500); // remove after fade-out
+    }
+  });
+</script>
 
 </body>
 </html>

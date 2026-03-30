@@ -1,6 +1,5 @@
-/* 
-sorting upcoming and past shows
-*/
+/* sorting upcoming and past shows */
+
 const showsData = [
     { date: "2026-02-18", text: "February 18 | Los Angeles, CA | Minaret Records Piano Party" },
     { date: "2026-06-03", text: "June 3 | Brooklyn, NY | Three's Brewing" },
@@ -36,6 +35,8 @@ showsData.forEach(show => {
 });
 
 
+/* resize jitter fix */
+
 let resizeTimeout;
 
 window.addEventListener("resize", () => {
@@ -46,3 +47,6 @@ window.addEventListener("resize", () => {
     document.body.classList.remove("resizing");
   }, 150);
 });
+
+
+
