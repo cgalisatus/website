@@ -29,7 +29,13 @@ main {
     padding-bottom: 50px;
 }
 
-/* default font + styling */
+body.resizing * {
+  transition: none !important;
+}
+
+/* ------------------------------
+title
+-------------------------------*/
 .title {
     font-size: 2rem;
     font-weight: normal;
@@ -37,9 +43,6 @@ main {
     margin-bottom: 1rem;
     margin-top: 5rem;
 }
-/* ------------------------------
-title
--------------------------------*/
 
 /* title link formatting */
 .title a {

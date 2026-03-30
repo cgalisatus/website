@@ -34,3 +34,15 @@ showsData.forEach(show => {
         upcomingContainer.appendChild(div);
     }
 });
+
+
+let resizeTimeout;
+
+window.addEventListener("resize", () => {
+  document.body.classList.add("resizing");
+
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    document.body.classList.remove("resizing");
+  }, 150);
+});
