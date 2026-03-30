@@ -291,12 +291,12 @@ records page styling
 .record-block:hover img {
     transform: scale(1.03); 
     opacity: 0.1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease size 0.3s ease;
 }
 
 .record-block:hover .paragraphtext {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 1s ease;
 }
 
 /* ------------------------------

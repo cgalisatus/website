@@ -19,8 +19,7 @@ showsData.forEach(show => {
     const showDate = new Date(year, month - 1, day); //include shows that are today
     const div = document.createElement('div');
     div.classList.add('show');
-
-    console.log("test");
+ 
     if (show.link) {
         div.innerHTML = `<p>${show.text} <a href="${show.link}" target="_blank">🎟️</a></p>`;
     } else {
