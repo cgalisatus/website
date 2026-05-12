@@ -2,7 +2,7 @@
 
 const showsData = [
     { date: "2026-02-18", text: "February 18 | Los Angeles, CA | Minaret Records Piano Party" },
-    { date: "2026-05-18", text: "May 18 | Los Angeles, CA | Cheerio Collective, link: https://www.instagram.com/p/DYQA6FHBW_R/"},
+    { date: "2026-05-18", text: "May 18 | Los Angeles, CA | Cheerio Collective", link: "https://www.instagram.com/p/DYQA6FHBW_R/"},
     { date: "2026-06-03", text: "June 3 | Brooklyn, NY | Three's Brewing" },
     { date: "2026-06-04", text: "June 4 | Brooklyn, NY | Mudhouse" },
     { date: "2026-06-06", text: "June 6 | Manhattan, NY | Close Up"},
