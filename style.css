@@ -372,6 +372,35 @@ video & audio blocks
     aspect-ratio: 16/6;
 }
 
+.instagram-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 3rem auto;
+}
+
+.instagram-post {
+    width: 100%;
+    max-width: 540px;
+    transition: transform 0.4s ease;
+}
+
+@media (max-width: 800px) {
+    .instagram-gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .instagram-post {
+        max-width: 540px;
+    }
+}
+
 
 /* ------------------------------
 upcoming/past shows
