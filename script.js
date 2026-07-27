@@ -7,6 +7,7 @@ const showsData = [
     { date: "2026-06-04", text: "June 4 | Brooklyn, NY | Mudhouse" },
     { date: "2026-06-06", text: "June 6 | Manhattan, NY | Close Up"},
     { date: "2026-07-13", text: "July 13 | Stanford, CA | Stanford Jazz Festival", link: "https://stanfordjazz.org/event/christina-galisatus-quintet-plays-joni-mitchell/" },
+    { date: "2026-08-09", text: "August 9 | Los Angeles, CA | Knobworld", link: "https://www.instagram.com/p/DbMq1TjyI55/" }, 
     { date: "2026-10-21", text: "October 21 | Los Angeles, CA | Sam First"}
 
 ];
