@@ -9,7 +9,8 @@ const showsData = [
     { date: "2026-07-13", text: "July 13 | Stanford, CA | Stanford Jazz Festival", link: "https://stanfordjazz.org/event/christina-galisatus-quintet-plays-joni-mitchell/" },
     { date: "2026-08-09", text: "August 9 | Los Angeles, CA | Knobworld", link: "https://www.instagram.com/p/DbMq1TjyI55/" }, 
     { date: "2026-10-14", text: "October 14 | Brooklyn, NY | Three's Brewing"}, 
-    { date: "2026-10-21", text: "October 21 | Los Angeles, CA | Sam First", link: "https://www.samfirstbar.com/events/devon-gates-christina-galisatus-with-nicole-mccabe-mark-valdes"}
+    { date: "2026-10-21", text: "October 21 | Los Angeles, CA | Sam First", link: "https://www.samfirstbar.com/events/devon-gates-christina-galisatus-with-nicole-mccabe-mark-valdes"},
+    { date: "2026-11-12", text: "November 12 | San Francisco, CA | House Concert"}
 
 ];
 
