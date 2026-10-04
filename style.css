@@ -18,6 +18,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    background-color: #f9ede6;
+
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("assets/grunge-vintage-light-leaks-background-with-dusty-overlay-texture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
 }
 
 /* layout */
@@ -34,6 +49,11 @@ main {
 /* resize jitter fix */
 body.resizing * {
   transition: none !important;
+}
+
+main, footer {
+    position: relative;
+    z-index: 1;
 }
 
 /* ------------------------------
