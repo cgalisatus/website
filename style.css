@@ -610,12 +610,12 @@ mobile responsive
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .nav {
         gap: 1rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .nav {
@@ -639,6 +639,10 @@ mobile responsive
     .bodytext {
         font-size: 0.95rem;
         text-align: center;
+    }
+
+    .video-gallery {
+    grid-template-columns: 1fr;
     }
 
     .video-block iframe,
