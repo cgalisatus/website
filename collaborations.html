@@ -11,6 +11,26 @@
     <link rel="apple-touch-icon" href="/assets/favicon.png">
 </head>
 
+<script>
+document.querySelectorAll('.studio-block a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        if (window.matchMedia('(max-width: 600px)').matches) {
+            if (!this.classList.contains('show-credit')) {
+                event.preventDefault();
+
+                // close other open credits
+                document.querySelectorAll('.studio-block a.show-credit')
+                    .forEach(other => other.classList.remove('show-credit'));
+
+                // show this credit
+                this.classList.add('show-credit');
+            }
+        }
+    });
+});
+</script>
+
+
 <body>
 
     <div id="loader">

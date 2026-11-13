@@ -686,4 +686,13 @@ mobile responsive
         opacity: 0.6;
 }
 
+    .studio-block a.show-credit img {
+        opacity: 0.12;
+        transform: scale(1.04);
+    }
+
+    .studio-block a.show-credit .studio-credit {
+        opacity: 1;
+    }
+
 }
