@@ -695,4 +695,23 @@ mobile responsive
         opacity: 1;
     }
 
+.shows {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.upcoming,
+.past-shows {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shows .sectionheader {
+    text-align: center;
+}
 }
