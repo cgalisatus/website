@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>teaching</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+</head>
+
+<body>
+
+    <div id="loader">
+        <span class="loader-flower"> ✿</span>
+        <span class="loader-flower"> ✿</span>
+        <span class="loader-flower">✿ </span>
+    </div>
+
+        <p class="writing">
+            sunflower
+        </p>
+
+
+
+    <footer>
+      <p>© Christina Galisatus 2026</p>
+    </footer>
+
+<!--logic for loading fade-in-->
+    <script> 
+    window.addEventListener("load", () => {
+    document.querySelector("main").classList.add("loaded");
+    });
+    </script>
+
+<!--logic for dot loading fade-out-->
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    if (loader) {
+      loader.style.transition = "opacity 0.5s ease";
+      loader.style.opacity = 0;
+      setTimeout(() => loader.remove(), 500); // remove after fade-out
+    }a
+  });
+</script>
+
+</body>
+</html>
