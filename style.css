@@ -638,8 +638,7 @@ mobile responsive
 
     .bodytext {
         font-size: 0.95rem;
-        align-self: flex-start;
-        text-align: left;
+        text-align: center;
     }
 
     .video-block iframe,
