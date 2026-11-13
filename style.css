@@ -372,6 +372,45 @@ video & audio blocks
     transform: scale(1.05);
 }
 
+.misc-vid-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    align-items: start;
+}
+
+.misc-vid-row .video-block,
+.misc-vid-row .instagram-block {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    min-height: 1000px;
+}
+
+.misc-vid-row iframe,
+.misc-vid-row video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.misc-vid-row iframe {
+    aspect-ratio: 16 / 9;
+}
+
+.misc-vid-row .instagram-media {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+    min-height: 500px;
+}
+
+
 .audio-block .paragraphtext {
     width: 100%;
     text-align: left;
@@ -654,6 +693,10 @@ mobile responsive
     .content-block,
     .video-block {
         max-width: 95%;
+    }
+
+    .misc-vid-row {
+        grid-template-columns: 1fr;
     }
 
     .record-block {

@@ -23,7 +23,7 @@
         <h1 class="title a">
             <a href="/index.html">christina galisatus</a>
         </h1>
-    
+
         <nav class="nav">
             <a href="/index.html">home</a>
             <a href="/records.html">records</a>
@@ -40,8 +40,8 @@
 
             <!--William: We Sing Together-->
             <div class="video-block">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-kzz4NadmnA?si=mCKICtMCTEIbzJga"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/-kzz4NadmnA?si=mCKICtMCTEIbzJga" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
@@ -49,12 +49,15 @@
 
             <!--What's there to do-->
             <div class="video-block">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QpVLR_8TGYc?si=DoYN5k44QQ1CppMd"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/QpVLR_8TGYc?si=DoYN5k44QQ1CppMd" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
+        </div>
+
+        <div class="misc-vid-row">
 
             <!--MM strings-->
             <div class="video-block">
@@ -71,7 +74,7 @@
             </div>
 
             <!--Grand Arts Piel Canela-->
-           <blockquote class="instagram-media" data-instgrm-captioned
+            <blockquote class="instagram-media" data-instgrm-captioned
                 data-instgrm-permalink="https://www.instagram.com/reel/DVpAaYUErRo/?utm_source=ig_embed&amp;utm_campaign=loading"
                 data-instgrm-version="14"
                 style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
@@ -161,19 +164,24 @@
                             target="_blank">A post shared by Grand Arts Vocal Jazz (@vapavocaljazz)</a>
                     </p>
                 </div>
-            </blockquote>
-            <script async src="//www.instagram.com/embed.js"></script>
+        </div>
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+        </div>
 
-    <p class="divider">
-    <svg width = "80vw" height="5" xmlns="http://www.w3.org/2000/svg">
-      <rect width = "80vw" height = "5" x="0" y="0" rx="20" ry="20"></rect></svg></p>
+        <p class="divider">
+            <svg width="80vw" height="5" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80vw" height="5" x="0" y="0" rx="20" ry="20"></rect>
+            </svg>
+        </p>
 
-            <h2 class="sectionheader">composition for visual media<br>
-            </h2>
-
+        <br>
+        <h2 class="sectionheader">composition for visual media<br>
+        </h2>
+        <div class="video-gallery">
             <!--Alaska-->
             <div class="video-block">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/m3UK2IygUMY?si=ZVWuAk93k-y-wtvW"
+                <iframe src="https://www.youtube.com/embed/m3UK2IygUMY?si=ZVWuAk93k-y-wtvW"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
@@ -181,24 +189,25 @@
 
             <!--People Song-->
             <div class="video-block">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TR1l-7B1ROs?si=6Mko6sYtuorhrLTC"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/TR1l-7B1ROs?si=6Mko6sYtuorhrLTC" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
 
-        <!--Course-->
+            <!--Course-->
             <div class="video-block">
-                <iframe width="560" height="auto" src="https://www.youtube.com/embed/auXYaacKMGQ?si=4jVl0m5KW4xBC2A0"
+                <iframe src="https://www.youtube.com/embed/auXYaacKMGQ?si=4jVl0m5KW4xBC2A0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
 
-        <!--SOS-->
-        <div class="imga-block">
-            <img src="assets/SOS.jpeg">
+            <!--SOS-->
+            <div class="imga-block">
+                <img src="assets/SOS.jpeg">
+            </div>
         </div>
 
     </main>
@@ -207,24 +216,25 @@
         <p>© Christina Galisatus 2026</p>
     </footer>
 
-<!--logic for loading fade-in-->
-    <script> 
-    window.addEventListener("load", () => {
-    document.querySelector("main").classList.add("loaded");
-    });
+    <!--logic for loading fade-in-->
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector("main").classList.add("loaded");
+        });
     </script>
 
-<!--logic for dot loading fade-out-->
+    <!--logic for dot loading fade-out-->
     <script>
-    window.addEventListener("load", () => {
-        const loader = document.getElementById("loader");
-        if (loader) {
-        loader.style.transition = "opacity 0.5s ease";
-        loader.style.opacity = 0;
-        setTimeout(() => loader.remove(), 500); // remove after fade-out
-        }
-    });
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loader");
+            if (loader) {
+                loader.style.transition = "opacity 0.5s ease";
+                loader.style.opacity = 0;
+                setTimeout(() => loader.remove(), 500); // remove after fade-out
+            }
+        });
     </script>
-    
+
 </body>
+
 </html>
