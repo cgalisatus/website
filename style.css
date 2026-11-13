@@ -20,7 +20,9 @@ body {
     justify-content: space-between;
     position: relative;
     background-color: #f9ede6;
-
+    padding-left: clamp(20px, 4vw, 50px);
+    padding-right: clamp(20px, 4vw, 50px);
+    box-sizing: border-box;
 }
 
 body::before {
@@ -73,7 +75,7 @@ main.loaded {
   display: flex;
   gap: 8px;
   z-index: 9999;
-  font-size: 20px; 
+  font-size: 30px; 
   color: #9a5b19;
 }
 
@@ -104,11 +106,12 @@ main.loaded {
 title
 -------------------------------*/
 .title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: normal;
     letter-spacing: 0.05em;
     margin-bottom: 1rem;
     margin-top: 5rem;
+    text-align: center;
 }
 
 /* title link formatting */
@@ -121,7 +124,7 @@ title
 body text
 -------------------------------*/
 .bodytext {
-    font-size: 1rem;
+    font-size: 1.2rem;
     opacity: 0.6;
     margin-bottom: 2rem;
     max-width: 650px;
@@ -152,7 +155,7 @@ section headers
 -------------------------------*/
 
 .sectionheader {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 0.05em;
     margin-bottom: 1rem;
@@ -174,9 +177,12 @@ navigation & footer
 .nav {
     display: flex;
     margin-bottom: 2rem;
-    gap: 1.5rem;
+    gap: 2.2rem;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: 2rem;
+    justify-content: center;
+
 }
 
 .nav a {
@@ -210,12 +216,12 @@ navigation & footer
 .nav a::before {
   content: "✿";
   position: absolute;
-  left: -6px;
+  left: -15px;
   top: 50%;
   transform: translateY(-40%) translateX(5px);
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
-  font-size: 0.6rem;
+  font-size: 1.5rem;
 }
 
 .nav a:hover::before {
@@ -275,17 +281,23 @@ records page styling
 
 /* image + text box */
 .record-block {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
+    width: fit-content;
     max-width: 800px;
     margin-bottom: 2rem;
 }
 
 .record-block img {
     display: block;
-    max-width: 90%;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 440px;
     height: auto;
+    max-height: none;
+    flex-shrink: 0;
+    margin: 0 auto;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     border-radius: 6px;
@@ -324,22 +336,21 @@ video & audio blocks
 -------------------------------*/
 
 /* gallery container */
-.video-gallery,
-.audio-gallery {
-    max-width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin: 1rem;
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
 }
 
 /* each video + description block */
 .video-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 800px;
+    align-items: flex-start;
+    width: 100%;
 }
 
 /* responsive iframe */
@@ -358,7 +369,7 @@ video & audio blocks
 }
 
 .video-block iframe:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .audio-block .paragraphtext {
@@ -387,8 +398,10 @@ video & audio blocks
 }
 
 .imga-block iframe {
-    width: 500px;
-    height: auto;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 500px;
     aspect-ratio: 16/6;
 }
 
@@ -421,6 +434,95 @@ video & audio blocks
     }
 }
 
+/* ------------------------------
+discography grids
+-------------------------------*/
+
+/* studio credits gallery */
+
+.studio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: clamp(1rem, 2.5vw, 2rem);
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.studio-block {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: default;
+}
+
+.studio-block img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.studio-credit {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    color: #000000bf;
+    line-height: 1.5;
+    pointer-events: none;
+}
+
+.studio-credit strong {
+    font-weight: normal;
+}
+
+.studio-credit span {
+    font-size: 0.7rem;
+}
+
+.studio-credit p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.studio-block:hover img {
+    opacity: 0.12;
+    transform: scale(1.04);
+}
+
+.studio-block:hover .studio-credit {
+    opacity: 1;
+}
+
+.studio-block a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.studio-block a:hover img {
+    opacity: 0.12;
+    transform: scale(1.04);
+}
+
+.studio-block a:hover .studio-credit {
+    opacity: 1;
+}
 
 /* ------------------------------
 upcoming/past shows
@@ -513,10 +615,17 @@ mobile responsive
 
     .nav {
         gap: 1rem;
+        font-size: 1rem;
     }
 
     .nav {
         max-width: 90%;
+    }
+
+    .nav a::before {
+        font-size: 1rem;
+        left: -7px;
+
     }
 
     img {
@@ -529,6 +638,8 @@ mobile responsive
 
     .bodytext {
         font-size: 0.95rem;
+        align-self: flex-start;
+        text-align: left;
     }
 
     .video-block iframe,
@@ -542,10 +653,11 @@ mobile responsive
         max-width: 95%;
     }
 
-    .record-block img {
-        display: flex;
-        width: 100%;
-        max-width: 400px;
+    .record-block {
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        max-width: 95%;
     }
 
     .record-block .paragraphtext {
