@@ -818,6 +818,12 @@ mobile responsive
         padding: 1rem;
     }
 
+    .page-content {
+        padding: 1rem;
+    }
+
+
+
     .bodytext {
         font-size: 0.95rem;
         text-align: center;
