@@ -135,7 +135,7 @@ body text
     font-size: 1.2rem;
     opacity: 0.6;
     margin-bottom: 2rem;
-    max-width: 650px;
+    max-width: 800px;
     text-align: center;
     line-height: 1.5;
     padding: 0 1 rem;
@@ -446,7 +446,7 @@ video & audio blocks
     gap: 1.5rem;
     width: 100%;
     max-width: 1100px;
-    margin: 2rem auto;
+    margin: 2rem auto 0;
     align-items: start;
 }
 
@@ -455,7 +455,7 @@ video & audio blocks
     width: 100%;
     min-width: 0;
     max-width: none;
-    min-height: 1000px;
+    min-height: 500px;
 }
 
 .misc-vid-row iframe,
