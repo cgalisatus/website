@@ -184,11 +184,49 @@ writing
 -------------------------------*/
 .writing {
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1rem;
     color: inherit;
     text-align: left;
-    justify-content: left;
-    display: flex;
+    line-height: 1.5;
+}
+
+.writing-title {
+    font-size: 2rem;
+}
+
+.photo-container {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+}
+
+.photo-container img {
+    display: block;
+    max-height: 50vh;
+    max-width: 90vw;
+    width: auto;
+    height: auto;
+}
+
+.secret-flower {
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    z-index: 10;
+
+    display: block;
+    line-height: 1;
+    color: #f4e7df;
+    font-size: 1.2rem;
+    text-decoration: none;
+    opacity: 0.15;
+    transition: all 0.5s ease;
+}
+
+.secret-flower:hover {
+    opacity: 1;
+    color: #e8a878;
+    transform: rotate(45deg) scale(1.3);
 }
 
 /* ------------------------------
