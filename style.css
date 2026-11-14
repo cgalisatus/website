@@ -49,6 +49,15 @@ main {
     transition: opacity 0.8s ease;
 }
 
+.page-content {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.page-content.loaded {
+    opacity: 1;
+}
+
 /* resize jitter fix */
 body.resizing * {
     transition: none !important;
@@ -248,6 +257,13 @@ writing
 .secret-charlie:hover {
     opacity: 0.2;
     transform: rotate(10deg) scale(1.5);}
+
+
+.firstwordsvideos {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+}
 
 /* ------------------------------
 navigation & footer
@@ -900,5 +916,9 @@ mobile responsive
 
     .shows .sectionheader {
         text-align: center;
+    }
+
+    .firstwordsvideos {
+        width: 75%;
     }
 }

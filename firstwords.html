@@ -19,6 +19,7 @@
         <span class="loader-flower">✿ </span>
     </div>
 
+<main class="page-content">
         <p class="writing">
 
             <span class="writing-title"><em>welcome to the secret first words portal ⋆.ೃ࿔ ݁ ˖*༄*ੈ✩‧₊</em></span><br>
@@ -49,24 +50,29 @@
     <footer>
       <p>© Christina Galisatus 2026</p>
     </footer>
+</main>
 
-<!--logic for loading fade-in-->
-    <script> 
-    window.addEventListener("load", () => {
-    document.querySelector("main").classList.add("loaded");
-    });
-    </script>
-
-<!--logic for dot loading fade-out-->
 <script>
-  window.addEventListener("load", () => {
+window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
+    const content = document.querySelector(".page-content");
+
+    // Fade out loader
     if (loader) {
-      loader.style.transition = "opacity 0.5s ease";
-      loader.style.opacity = 0;
-      setTimeout(() => loader.remove(), 500); // remove after fade-out
-    }a
-  });
+        loader.style.transition = "opacity 0.5s ease";
+        loader.style.opacity = 0;
+    }
+
+    // Fade in page content
+    setTimeout(() => {
+        if (content) {
+            content.classList.add("loaded");
+        }
+        if (loader) {
+            loader.remove();
+        }
+    }, 500);
+});
 </script>
 
 </body>
