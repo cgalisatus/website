@@ -819,10 +819,16 @@ mobile responsive
     }
 
     .page-content {
-        padding: 1rem;
+        padding: 1.2rem;
     }
 
+    .writing-title {
+        font-size: 1.3rem;
+    }
 
+    .writing {
+        font-size: 0.8rem;
+    }
 
     .bodytext {
         font-size: 0.95rem;
